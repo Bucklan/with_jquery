@@ -29,5 +29,5 @@
         });
     });
 </script>
-@yield('js')
+@stack('page-scripts')
 </html>

@@ -1,17 +1,15 @@
-<button type="button" class="btn btn-success"
-        data-bs-toggle="modal" data-bs-target="#AddModal">
-    Add Product
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="AddModal" tabindex="-1"
      aria-labelledby="AddModalLabel"
      aria-hidden="true">
+    <form action="" method="post" id="addProductForm">
+        @csrf
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5"
-                    id="modal-title">Create Product</h1>
+                    id="AddModalLabel">Create Product</h1>
                 <button type="button"
                         class="btn-close"
                         data-bs-dismiss="modal"
@@ -44,4 +42,5 @@
                 </div>
         </div>
     </div>
+    </form>
 </div>
